@@ -58,14 +58,113 @@ Lissajous figures have applications in various domains, including:
 \item \textbf{Art and Design:} Generate aesthetically appealing patterns.
 \end{itemize}
 
-\section{Visualization}
-Below is an example of a Lissajous figure where the frequency ratio is 3:2 and phase difference is $\frac{\pi}{2}$:
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=0.5\textwidth]{lissajous_example.png}
-%\caption{A Lissajous figure with frequency ratio 3:2 and phase difference $\frac{\pi}{2}$.}
-%\label{fig:lissajous}
-%\end{figure}
+\section{Analysis of Given Specifications}
+Below are various Lissajous figure specifications and their corresponding mathematical solutions.
+
+\subsection{Case 1: $y = \sin(3\text{kHz})$, $x = \sin(5\text{kHz} + 90^\circ)$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 5000 t + \frac{\pi}{2})
+\]
+\[
+y(t) = \sin(2\pi \cdot 3000 t)
+\]
+
+The frequencies are \( \omega_x = 2\pi \cdot 5000 \) and \( \omega_y = 2\pi \cdot 3000 \). The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{5000}{3000} = \frac{5}{3}
+\]
+
+Since the phase difference is \( 90^\circ = \frac{\pi}{2} \), the figure will be symmetric and display a characteristic pattern with a quarter-period phase shift between the axes.
+
+\subsection{Case 2: $y = \sin(3\text{kHz})$, $x = \sin(4\text{kHz} + 45^\circ)$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 4000 t + \frac{\pi}{4})
+\]
+\[
+y(t) = \sin(2\pi \cdot 3000 t)
+\]
+
+The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{4000}{3000} = \frac{4}{3}
+\]
+
+The phase difference is \( 45^\circ = \frac{\pi}{4} \), which will result in a more complex Lissajous pattern. The graph will have intricate loops with slight skewing.
+
+\subsection{Case 3: $y = \sin(2\text{kHz} + 45^\circ)$, $x = \sin(3\text{kHz})$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 3000 t)
+\]
+\[
+y(t) = \sin(2\pi \cdot 2000 t + \frac{\pi}{4})
+\]
+
+The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{3000}{2000} = \frac{3}{2}
+\]
+
+The phase difference of \( 45^\circ \) will result in a skewed Lissajous figure with a diagonal symmetry.
+
+\subsection{Case 4: $y = \sin(1\text{kHz})$, $x = \sin(3\text{kHz} + 45^\circ)$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 3000 t + \frac{\pi}{4})
+\]
+\[
+y(t) = \sin(2\pi \cdot 1000 t)
+\]
+
+The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{3000}{1000} = 3
+\]
+
+The phase difference of \( 45^\circ \) leads to a figure where the x-axis completes three cycles for every one cycle along the y-axis.
+
+\subsection{Case 5: $y = \sin(1\text{kHz})$, $x = \sin(2\text{kHz} + 45^\circ)$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 2000 t + \frac{\pi}{4})
+\]
+\[
+y(t) = \sin(2\pi \cdot 1000 t)
+\]
+
+The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{2000}{1000} = 2
+\]
+
+The phase difference of \( 45^\circ \) results in a Lissajous figure with two loops along the x-axis for every loop along the y-axis.
+
+\subsection{Case 6: $y = \sin(1\text{kHz})$, $x = \sin(1\text{kHz})$}
+
+Given:
+\[
+x(t) = \sin(2\pi \cdot 1000 t)
+\]
+\[
+y(t) = \sin(2\pi \cdot 1000 t)
+\]
+
+The frequency ratio is:
+\[
+\frac{\omega_x}{\omega_y} = \frac{1000}{1000} = 1
+\]
+
+Since the frequencies are equal and there is no phase difference (\( 0^\circ \)), the resulting Lissajous figure is a straight line along the diagonal.
+
+\section{Voltage Range}
+In all cases, the voltage variation is assumed to be in the range of $[-5, 5]V$.
 
 \section{Conclusion}
 Lissajous figures provide an elegant visualization of harmonic motion and phase relationships. Their study offers insights into signal analysis, mechanical vibrations, and artistic designs. Understanding their mathematical properties enhances their practical applications in science and engineering.
